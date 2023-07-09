@@ -1,0 +1,10 @@
+# Golang Master Class Project
+
+This repository documents my learning experiences in progressively complex topics as I created a Golang backend application. K8, AWS, and Docker are all referenced. A lot of testing and other effort is required.
+
+## Requirements
+*Basic Understanding of Golang
+*golang installed
+*Docker
+*Postgres (it wasn't easy installing docker and postgres on windows machine, most especially Postgres, I will add the work around method I used in achieving this.)
+*sqlc
