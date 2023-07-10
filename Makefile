@@ -17,5 +17,8 @@ makeFileDir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 sqlc:
 	docker run --rm -v $(makeFileDir):/src -w /src kjconroy/sqlc generate
 
+test:
+	go test -v -cover ./...
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test
