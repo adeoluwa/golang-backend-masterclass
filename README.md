@@ -24,3 +24,6 @@ Day 2:
 
 had issues installing docker, turns out I had to install [wsl2](https://docs.docker.com/desktop/wsl/) and a linux distribution, Ubuntu in this case before i could get docker to run properly. also had issues connecting to table plus with postgres, to solve this, I had to uninstall the previous postgres installed on my system.
 
+Day 3:
+
+Unit testing, CRUD Operations: wrote series and ran series of unit test to test database functionality, installed [golang testify](https://github.com/stretchr/testify), had issues with postgres driver, hence failed the first unit test, but was able to fix it by installing [golang lib pq](https://github.com/lib/pq). That wraps up day 3.
