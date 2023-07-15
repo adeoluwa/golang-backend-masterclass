@@ -44,3 +44,31 @@ created a store to store which provides all functions to execute db queries and 
 Day 5:
 DB TX LOCK: how to debug a transaction deadlock
 implemented the updateAccount feature for the store and also wrote and ran a test for it.
+
+Day 6:
+Transaction Isolation level and how they are achieved in mysql and postgres db;
+Read Phenomena:
+1. Dirty Read: Occurs when a transaction reads data written by other concurrent uncommitted transaction
+2. Non-Repeatable Read: Occurs when a transaction reads the same row twice and see different values because it has been modified by other committed transaction
+3. Phantom Read: A transaction re-execute a query to find rows that satisfy a condition and sets a different set of rows due to changes by other committed transaction
+4. Serialization Anomaly: result of a group concurrent committed transactions is impossible to achieve if we try them sequentially in any order without overlapping
+
+## The Four (4) standard isolation levels
+1. READ UNCOMMITTED: can see data written by uncommitted transaction
+2. READ COMMITTED: Only see data written by committed transaction
+3. REPEATABLE READ: Same read query always return same result
+4. SERIALIZABLE : Can achieve same result if execute transactions serially in some order instead of concurrently
+
+## MySQL vs Postgres
+|               |  MySQL             | Postgres 
+| ------------- | -------------      | -------------             |
+| `isolation`   | 4 levels           | 3 Levels                  |
+| `operation`   | locking  mechanism | Dependencies mechanism    |
+| `lowest lv`   | Repeatable Read    | Read Committed            |
+
+In Postgres, READ UNCOMMITTED behaves exactly like READ COMMITTED, making postgres to have 3 levels of isolation by default.
+
+Day 7:
+Github Actions + Postgres
+setting up CI/CD using github actions, created the ci.yml locally before pushing to create the workflows for the project.
+Added postgres service and also map the port for the github to connect to.
