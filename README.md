@@ -42,5 +42,5 @@ Also learnt about ACID property;
 created a store to store which provides all functions to execute db queries and transactions, also wrote and ran several unit test to for the store package.
 
 Day 5:
-DBTXLOCK: how to debug a transaction deadlock
-implemented the uppdateAccount feature for the store and also wrote and ran a test for it.
+DB TX LOCK: how to debug a transaction deadlock
+implemented the updateAccount feature for the store and also wrote and ran a test for it.
