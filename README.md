@@ -72,3 +72,16 @@ Day 7:
 Github Actions + Postgres
 setting up CI/CD using github actions, created the ci.yml locally before pushing to create the workflows for the project.
 Added postgres service and also map the port for the github to connect to.
+
+Day 8: 
+Implemented HTTP API using Gin
+installed [Gin](https://github.com/gin-gonic/gin) using go get command 
+Gin has a martini-like API and claims to be up to 40 times faster. Gin allows you to build web applications and microservices in Go. It contains a set of commonly used functionalities (e.g., routing, middleware support, rendering, etc.)
+
+* Created An API folder at the root of the project
+* Added a server.go file to house all the endpoints
+* Added an account.go file to house all handlers used in the account endpoints
+* Implemented three (3) endpoints:
+    - create account "/account" using POST method
+    - get account  "/account/:id" using GET method
+    - list accounts "/accounts" using GET method and the query params on post man to generate queries, added page id and also page size as the params
