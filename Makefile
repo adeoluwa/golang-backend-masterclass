@@ -26,4 +26,9 @@ psql:
 server:
 	go run main.go
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server
+start:
+	docker start postgres12
+check:
+	docker ps
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check
