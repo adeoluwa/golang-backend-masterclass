@@ -88,15 +88,15 @@ Gin has a martini-like API and claims to be up to 40 times faster. Gin allows yo
 
 Day 9: 
 Loading Config from file and ENV VARS with viper
-* Why File?
+## Why File?
     - Development: 
         - Easily Specify default configuration for local development and testing
 
-* Why ENV VARS?
+## Why ENV VARS?
     - Deployment: 
         - Easily Override the default configuration for local when deploy with docker containers
 
-* Why VIper?
+## Why VIper?
     - Can Find, Load, unmarshal config file 
         * JSON, TOML, YAML, ENV, INI
     - Read config from environment variables or flag
