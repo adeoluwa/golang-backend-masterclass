@@ -85,3 +85,23 @@ Gin has a martini-like API and claims to be up to 40 times faster. Gin allows yo
     - create account "/account" using POST method
     - get account  "/account/:id" using GET method
     - list accounts "/accounts" using GET method and the query params on post man to generate queries, added page id and also page size as the params
+
+Day 9: 
+Loading Config from file and ENV VARS with viper
+* Why File?
+    - Development: 
+        - Easily Specify default configuration for local development and testing
+
+* Why ENV VARS?
+    - Deployment: 
+        - Easily Override the default configuration for local when deploy with docker containers
+
+* Why VIper?
+    - Can Find, Load, unmarshal config file 
+        * JSON, TOML, YAML, ENV, INI
+    - Read config from environment variables or flag
+        * Override existing values, set default values
+    - Read config from remote system 
+        * Etcd, Consul
+    - Live watching and writing config file
+        * Reread changed file, save any modification.
