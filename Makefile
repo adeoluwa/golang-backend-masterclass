@@ -28,7 +28,12 @@ server:
 
 start:
 	docker start postgres12
+
 check:
 	docker ps
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check
+mock:
+	mockgen -package mockdb -destination db/mock/store.go backend_masterc
+lass/db/sqlc Store
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check mock
