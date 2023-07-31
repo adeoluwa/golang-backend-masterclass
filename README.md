@@ -106,6 +106,31 @@ Loading Config from file and ENV VARS with viper
     - Live watching and writing config file
         * Reread changed file, save any modification.
 
+Day 10:
+Mock DB for testing HTTP API in GO
+## Why mock DB
+    - Independent Test
+        - Isolated Test data
+        - avoid conflicts
+    - Faster Test
+        - Reduce a lot of time talking to the database
+    - 100% Coverage
+        - Easily setup edge cases: unexpected errors
+## Is it good enough to API with a mock ?
+    - Yes: our real db store is already tested.
+
+    Mock DB and Real DB should implement the same interface.
+
+## How to mock 
+    - Use Fake DB; Memory implement a fake version of DB; Store data in the memory 
+    - Use DB Studs: GOMOCK
+        - Generate and build studs that return hard coded values
+
+Day 11:
+Using mock db to test api endpoints, set gin mode to test mode, so as to enable easy reading of test result
+first test coverage: 48.8%
+test left: CreateAccount, ListAccount.
+
 # House-price-prediction-using-flask
 In this project, I developed the predictive power of a model trained on house price data. It deploys with flask API and uses Linear Regression to predict the price value. Deploy Machine Learning Model Using Flask to take a model from python code.
 
