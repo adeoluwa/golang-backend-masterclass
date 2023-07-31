@@ -131,7 +131,5 @@ Using mock db to test api endpoints, set gin mode to test mode, so as to enable 
 first test coverage: 48.8%
 test left: CreateAccount, ListAccount.
 
-# House-price-prediction-using-flask
-In this project, I developed the predictive power of a model trained on house price data. It deploys with flask API and uses Linear Regression to predict the price value. Deploy Machine Learning Model Using Flask to take a model from python code.
 
 <!-- If you want to more clear explanation, see my blog [House Price Prediction using Flask for Beginners](https://techyscientists.blogspot.com/2021/07/house-price-prediction-using-flask.html) -->
