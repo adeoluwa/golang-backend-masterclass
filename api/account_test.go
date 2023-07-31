@@ -43,6 +43,7 @@ func TestGetAccountAPI(t *testing.T){
 
 	// check response
 	require.Equal(t, http.StatusOK, recorder.Code)
+	
 }
 
 func randomAccount() db.Account{

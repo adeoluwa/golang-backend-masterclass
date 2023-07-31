@@ -33,7 +33,6 @@ check:
 	docker ps
 
 mock:
-	mockgen -package mockdb -destination db/mock/store.go backend_masterc
-lass/db/sqlc Store
+	mockgen -package mockdb -destination db/mock/store.go backend_masterclass/db/sqlc Store
 
 .PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check mock
