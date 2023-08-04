@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["mockdb", "sqlc", "sslmode", "stretchr", "unmarshal"]
+  "cSpell.words": [
+    "mockdb",
+    "oneof",
+    "sqlc",
+    "sslmode",
+    "stretchr",
+    "unmarshal"
+  ]
 }

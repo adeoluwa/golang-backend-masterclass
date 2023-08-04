@@ -133,3 +133,8 @@ test left: CreateAccount, ListAccount.
 
 
 <!-- If you want to more clear explanation, see my blog [House Price Prediction using Flask for Beginners](https://techyscientists.blogspot.com/2021/07/house-price-prediction-using-flask.html) -->
+
+Day 11:
+Custom params validator in Go
+* implemented the createAccount test
+* implemented a new endpoint (transfers) and a create transfer handler.
