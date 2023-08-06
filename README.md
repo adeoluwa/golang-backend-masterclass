@@ -141,3 +141,10 @@ Custom params validator in Go
 * created a new util function (currency.go)
 * the util function is used to validate the currency when make  a transfer instead of hard coding the values.
 * TODO: Test transfer endpoint.
+
+Day 13:
+* Added users table with unique and foreign key constraints 
+* users can have multiple account with different currencies
+ - to add the new database, we can either replace the entire  initial schema with the newly generated one but the approach is not standard, since requirements changes all the time, the other alternative is to create a new migration; hence the add users schema files in the migration folder.
+* performed migrate up and down few times, and had to manually change the schema migration status to force, to take care of the dirty version.
+* Added new migrateup1 and migratedown1 command to the make file

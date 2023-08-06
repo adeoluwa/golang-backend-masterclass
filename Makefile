@@ -10,8 +10,14 @@ dropdb:
 migrateup:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/postgres12?sslmode=disable" -verbose up
 
+migrateup1:
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/postgres12?sslmode=disable" -verbose up 1
+
 migratedown:
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/postgres12?sslmode=disable" -verbose down
+
+migratedown1:
+	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/postgres12?sslmode=disable" -verbose down 1
 
 makeFileDir := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 sqlc:
@@ -38,4 +44,4 @@ check:
 mock:
 	mockgen -package mockdb -destination db/mock/store.go backend_masterclass/db/sqlc Store
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check mock stop
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check mock stop migrateup1 migratedown1
