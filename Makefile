@@ -41,7 +41,13 @@ stop:
 check:
 	docker ps
 
+image:
+	docker images
+
 mock:
 	mockgen -package mockdb -destination db/mock/store.go backend_masterclass/db/sqlc Store
 
-.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check mock stop migrateup1 migratedown1
+tidy:
+	go mod tidy
+
+.PHONY: postgres createdb dropdb migrateup migratedown sqlc test psql server start check image mock stop migrateup1 migratedown1 tidy
