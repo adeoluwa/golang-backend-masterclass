@@ -150,7 +150,6 @@ Day 13:
 * Added new migrateup1 and migratedown1 command to the make file
 
 Day 14:
-    * Created a new db connection using table plus
-    * tested the newly established connection
-    * ran unit test for all functionalities till date
-    
+* Created a new db connection using table plus
+* tested the newly established connection
+* ran unit test for all functionalities till date
